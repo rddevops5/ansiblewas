@@ -16,10 +16,9 @@
     - "{{ WAS9 }}"
 
 - name: "Run slient install into {{installationDirectory}}"
-  shell: |
-    {{imcl_path}} install {{ item }} -repositories {{ Extract_WAS_location }} -installationDirectory  {{installationDirectory}} -acceptLicense -sP
-    
-  with_items: "{{ com.ibm.websphere.BASE.v90 }}"
+   command: '{{imcl_path}} install com.ibm.websphere.BASE.v90 -repositories {{ Extract_WAS_location }} -installationDirectory  {{installationDirectory}} -acceptLicense -sP'
+  args: 
+    creates: /opt/tools/IBM/WebSphere/AppServer/bin/versionInfo.sh
   
 - name: "Remove was8 packages"
   file: "path=\"{{Extract_WAS_location}}{{item}}\" state=absent"
