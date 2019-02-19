@@ -17,7 +17,7 @@
 
 - name: "Run slient install into {{installationDirectory}}"
   shell: |
-    '{{imcl_path}} install com.ibm.websphere.BASE* -repositories {{ Extract_WAS_location }} -installationDirectory  {{installationDirectory}} -acceptLicense -sP'
+    '{{imcl_path}} install {{ item }} -repositories {{ Extract_WAS_location }} -installationDirectory  {{installationDirectory}} -acceptLicense -sP'
     
   with_items: "{{ WAS9FPrepo }}"
   
