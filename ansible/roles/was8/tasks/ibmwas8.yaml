@@ -19,7 +19,7 @@
   shell: |
     {{imcl_path}} install {{ item }} -repositories {{ Extract_WAS_location }} -installationDirectory  {{installationDirectory}} -acceptLicense -sP
     
-  with_items: "{{ WAS9FPrepo }}"
+  with_items: "{{ com.ibm.websphere.BASE.v90 }}"
   
 - name: "Remove was8 packages"
   file: "path=\"{{Extract_WAS_location}}{{item}}\" state=absent"
