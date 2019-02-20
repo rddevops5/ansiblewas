@@ -16,7 +16,7 @@
 #    - "{{ IBMWASJAVA }}"
 
 - name: "Run silent install to {{installationDirectory}}"
-  command: '{{imcl}} install com.ibm.java.jdk.v80 -repositories "{{ Extract_JAVASDK_location }}"  -installationDirectory  {{installationDirectory}} -acceptLicense -sP'
+  command: '{{imcl}} install com.ibm.java.jdk.v8_8.0.3000.20160623_1418 -repositories "{{ Extract_JAVASDK_location }}"  -installationDirectory  {{installationDirectory}} -acceptLicense -sP'
   register: installSDK             
   changed_when: installSDK.rc != 0  
 
