@@ -18,7 +18,6 @@
 - name: "Run silent install to {{installationDirectory}}"
   shell: |
      '{{imcl}} install com.ibm.java.jdk.v8_8.0.3000.20160623_1418 -repositories "{{ Extract_JAVASDK_location }}"  -installationDirectory  {{installationDirectory}} -acceptLicense -sP'
-    exit 0
   register: installSDK             
   changed_when: installSDK.rc != 0  
 
