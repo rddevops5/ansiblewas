@@ -26,8 +26,8 @@
   args: 
     creates: /opt/tools/IBM/InstallationManager/eclipse/tools/imcl
   
-- name: "remove IIM package"
-  file: "path=\"{{tmp_location}}\" state=absent"
+#- name: "remove IIM package"
+  #file: "path=\"{{tmp_location}}\" state=absent"
 
-- name: "Clean up the unarchived IIM Dir"
-  file: "path=\"{{Extract_IM_location}}\" state=absent"
+#- name: "Clean up the unarchived IIM Dir"
+ # file: "path=\"{{Extract_IM_location}}\" state=absent"
