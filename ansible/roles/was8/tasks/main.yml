@@ -1,6 +1,6 @@
 ---
-- include: ibmsdk.yaml
 - include: ibmim.yaml
+- include: ibmsdk.yaml
 - include: ibmwas8.yaml
 - include: ibmfp.yaml
 - include: ibmpostinstall.yaml
