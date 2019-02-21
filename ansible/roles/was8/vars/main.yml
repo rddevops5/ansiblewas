@@ -9,8 +9,8 @@ download_JAVASDK_url: https://maven.etb.tieto.com/artifactory/fs-pcm-misc/IBM/Ap
 download_WAS_url: https://maven.etb.tieto.com/artifactory/list/fs-pcm-misc/IBM/AppServer/WebSphere/WAS9.0/WAS/
 imcl: /DevOps_Do_Not_Delete/IM/tools/imcl
 imcl_path: /opt/tools/IBM/InstallationManager/eclipse/tools/imcl
-installationDirectory: /opt/tools/IBM/WebSphere/AppServer
-installationDirectory_IIM: /opt/tools/IBM/InstallationManager
+installationDirectory: /opt/tools/IBM/WebSphere/AppServer/
+installationDirectory_IIM: /opt/tools/IBM/InstallationManager/
 log_file: /tmp/IIM_install.log
 tmp_location: /tmp/im/
 zip: agent.installer.lnx.gtk.x86_64_1.8.5.zip
